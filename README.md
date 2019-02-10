@@ -41,8 +41,8 @@ curl -X GET http://localhost:8080/api/v1/tasks/1 -H 'Content-Type: application/j
 ```
 curl -X GET http://localhost:8080/api/v1/tasks -H 'Content-Type: application/json'
 curl -X GET http://localhost:8080/api/v1/tasks?search=name:Task -H 'Content-Type: application/json'
-curl -X GET http://localhost:8080/api/v1/tasks?search=description:Task desc -H 'Content-Type: application/json'
-curl -X GET http://localhost:8080/api/v1/tasks?search=done:false desc -H 'Content-Type: application/json'
+curl -X GET http://localhost:8080/api/v1/tasks?search=description:Task -H 'Content-Type: application/json'
+curl -X GET http://localhost:8080/api/v1/tasks?search=done:false -H 'Content-Type: application/json'
 ```
 
 
