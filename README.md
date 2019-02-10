@@ -16,9 +16,9 @@ To run app without tests use
 ```mvn clean install -DskipTests spring-boot:run```
 
 
-## Curl Usage example
+## Usage examples (curl)
 
-Create Todo Task
+### Create Todo Task
 POST /api/v1/tasks
 ```
 curl -X POST \
@@ -31,13 +31,13 @@ curl -X POST \
 }'
 ```
 
-Get Todo Task
+### Get Todo Task
 GET /api/v1/tasks/1
 ```
 curl -X GET http://localhost:8080/api/v1/tasks/1 -H 'Content-Type: application/json'
 ```
 
-List and Filter Todo Tasks
+### List and Filter Todo Tasks
 ```
 curl -X GET http://localhost:8080/api/v1/tasks -H 'Content-Type: application/json'
 curl -X GET http://localhost:8080/api/v1/tasks?search=name:Task -H 'Content-Type: application/json'
@@ -46,7 +46,7 @@ curl -X GET http://localhost:8080/api/v1/tasks?search=done:false desc -H 'Conten
 ```
 
 
-Update Todo Task
+### Update Todo Task
 PUT /api/v1/tasks/1
 ```
 curl -X PUT \
@@ -59,7 +59,7 @@ curl -X PUT \
 }'
 ```
 
-Update Todo Done status
+### Update Todo Done status
 PATCH /api/v1/tasks/1
 ```
 curl -X PATCH \
@@ -70,7 +70,7 @@ curl -X PATCH \
 }'
 ```
 
-Delete Todo Task
+### Delete Todo Task
 DELETE /api/v1/tasks/1
 ```
 curl -X DELETE \
