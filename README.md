@@ -25,8 +25,7 @@ curl -X POST \
   http://localhost:8080/api/v1/tasks \
   -H 'Content-Type: application/json' \
   -d '{
-	"id": "123",
-	"name": "Task",
+	"name": "Task"
 	"description": "Task description"
 }'
 ```
